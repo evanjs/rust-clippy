@@ -1,5 +1,4 @@
 #![feature(array_windows)]
-#![feature(binary_heap_into_iter_sorted)]
 #![feature(box_patterns)]
 #![feature(macro_metavar_expr_concat)]
 #![feature(f128)]
@@ -7,7 +6,6 @@
 #![feature(if_let_guard)]
 #![feature(iter_intersperse)]
 #![feature(iter_partition_in_place)]
-#![feature(let_chains)]
 #![feature(never_type)]
 #![feature(round_char_boundary)]
 #![feature(rustc_private)]
@@ -729,8 +727,9 @@ pub fn register_lints(store: &mut rustc_lint::LintStore, conf: &'static Conf) {
     store.register_early_pass(|| Box::new(misc_early::MiscEarlyLints));
     store.register_late_pass(|_| Box::new(redundant_closure_call::RedundantClosureCall));
     store.register_early_pass(|| Box::new(unused_unit::UnusedUnit));
+    store.register_late_pass(|_| Box::new(unused_unit::UnusedUnit));
     store.register_late_pass(|_| Box::new(returns::Return));
-    store.register_late_pass(move |tcx| Box::new(collapsible_if::CollapsibleIf::new(tcx, conf)));
+    store.register_late_pass(move |_| Box::new(collapsible_if::CollapsibleIf::new(conf)));
     store.register_late_pass(|_| Box::new(items_after_statements::ItemsAfterStatements));
     store.register_early_pass(|| Box::new(precedence::Precedence));
     store.register_late_pass(|_| Box::new(needless_parens_on_range_literals::NeedlessParensOnRangeLiterals));
@@ -747,7 +746,7 @@ pub fn register_lints(store: &mut rustc_lint::LintStore, conf: &'static Conf) {
     store.register_late_pass(move |_| Box::new(unused_self::UnusedSelf::new(conf)));
     store.register_late_pass(|_| Box::new(mutable_debug_assertion::DebugAssertWithMutCall));
     store.register_late_pass(|_| Box::new(exit::Exit));
-    store.register_late_pass(|_| Box::new(to_digit_is_some::ToDigitIsSome));
+    store.register_late_pass(move |_| Box::new(to_digit_is_some::ToDigitIsSome::new(conf)));
     store.register_late_pass(move |_| Box::new(large_stack_arrays::LargeStackArrays::new(conf)));
     store.register_late_pass(move |_| Box::new(large_const_arrays::LargeConstArrays::new(conf)));
     store.register_late_pass(|_| Box::new(floating_point_arithmetic::FloatingPointArithmetic));

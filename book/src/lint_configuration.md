@@ -734,6 +734,16 @@ Minimum chars an ident can have, anything below or equal to this will be linted.
 * [`min_ident_chars`](https://rust-lang.github.io/rust-clippy/master/index.html#min_ident_chars)
 
 
+## `missing-docs-allow-unused`
+Whether to allow fields starting with an underscore to skip documentation requirements
+
+**Default Value:** `false`
+
+---
+**Affected lints:**
+* [`missing_docs_in_private_items`](https://rust-lang.github.io/rust-clippy/master/index.html#missing_docs_in_private_items)
+
+
 ## `missing-docs-in-crate-items`
 Whether to **only** check for missing documentation in items visible within the current
 crate. For example, `pub(crate)` items.
@@ -839,6 +849,7 @@ The minimum rust version that the project supports. Defaults to the `rust-versio
 * [`same_item_push`](https://rust-lang.github.io/rust-clippy/master/index.html#same_item_push)
 * [`seek_from_current`](https://rust-lang.github.io/rust-clippy/master/index.html#seek_from_current)
 * [`seek_rewind`](https://rust-lang.github.io/rust-clippy/master/index.html#seek_rewind)
+* [`to_digit_is_some`](https://rust-lang.github.io/rust-clippy/master/index.html#to_digit_is_some)
 * [`transmute_ptr_to_ref`](https://rust-lang.github.io/rust-clippy/master/index.html#transmute_ptr_to_ref)
 * [`tuple_array_conversions`](https://rust-lang.github.io/rust-clippy/master/index.html#tuple_array_conversions)
 * [`type_repetition_in_bounds`](https://rust-lang.github.io/rust-clippy/master/index.html#type_repetition_in_bounds)
