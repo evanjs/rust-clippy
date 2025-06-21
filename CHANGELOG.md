@@ -5685,6 +5685,7 @@ Released 2018-09-13
 [`cmp_nan`]: https://rust-lang.github.io/rust-clippy/master/index.html#cmp_nan
 [`cmp_null`]: https://rust-lang.github.io/rust-clippy/master/index.html#cmp_null
 [`cmp_owned`]: https://rust-lang.github.io/rust-clippy/master/index.html#cmp_owned
+[`coerce_container_to_any`]: https://rust-lang.github.io/rust-clippy/master/index.html#coerce_container_to_any
 [`cognitive_complexity`]: https://rust-lang.github.io/rust-clippy/master/index.html#cognitive_complexity
 [`collapsible_else_if`]: https://rust-lang.github.io/rust-clippy/master/index.html#collapsible_else_if
 [`collapsible_if`]: https://rust-lang.github.io/rust-clippy/master/index.html#collapsible_if
@@ -5728,6 +5729,7 @@ Released 2018-09-13
 [`disallowed_type`]: https://rust-lang.github.io/rust-clippy/master/index.html#disallowed_type
 [`disallowed_types`]: https://rust-lang.github.io/rust-clippy/master/index.html#disallowed_types
 [`diverging_sub_expression`]: https://rust-lang.github.io/rust-clippy/master/index.html#diverging_sub_expression
+[`doc_broken_link`]: https://rust-lang.github.io/rust-clippy/master/index.html#doc_broken_link
 [`doc_comment_double_space_linebreaks`]: https://rust-lang.github.io/rust-clippy/master/index.html#doc_comment_double_space_linebreaks
 [`doc_include_without_cfg`]: https://rust-lang.github.io/rust-clippy/master/index.html#doc_include_without_cfg
 [`doc_lazy_continuation`]: https://rust-lang.github.io/rust-clippy/master/index.html#doc_lazy_continuation
@@ -5736,6 +5738,7 @@ Released 2018-09-13
 [`doc_markdown`]: https://rust-lang.github.io/rust-clippy/master/index.html#doc_markdown
 [`doc_nested_refdefs`]: https://rust-lang.github.io/rust-clippy/master/index.html#doc_nested_refdefs
 [`doc_overindented_list_items`]: https://rust-lang.github.io/rust-clippy/master/index.html#doc_overindented_list_items
+[`doc_suspicious_footnotes`]: https://rust-lang.github.io/rust-clippy/master/index.html#doc_suspicious_footnotes
 [`double_comparisons`]: https://rust-lang.github.io/rust-clippy/master/index.html#double_comparisons
 [`double_ended_iterator_last`]: https://rust-lang.github.io/rust-clippy/master/index.html#double_ended_iterator_last
 [`double_must_use`]: https://rust-lang.github.io/rust-clippy/master/index.html#double_must_use
@@ -5889,6 +5892,7 @@ Released 2018-09-13
 [`inverted_saturating_sub`]: https://rust-lang.github.io/rust-clippy/master/index.html#inverted_saturating_sub
 [`invisible_characters`]: https://rust-lang.github.io/rust-clippy/master/index.html#invisible_characters
 [`io_other_error`]: https://rust-lang.github.io/rust-clippy/master/index.html#io_other_error
+[`ip_constant`]: https://rust-lang.github.io/rust-clippy/master/index.html#ip_constant
 [`is_digit_ascii_radix`]: https://rust-lang.github.io/rust-clippy/master/index.html#is_digit_ascii_radix
 [`items_after_statements`]: https://rust-lang.github.io/rust-clippy/master/index.html#items_after_statements
 [`items_after_test_module`]: https://rust-lang.github.io/rust-clippy/master/index.html#items_after_test_module
@@ -5964,6 +5968,7 @@ Released 2018-09-13
 [`manual_is_ascii_check`]: https://rust-lang.github.io/rust-clippy/master/index.html#manual_is_ascii_check
 [`manual_is_finite`]: https://rust-lang.github.io/rust-clippy/master/index.html#manual_is_finite
 [`manual_is_infinite`]: https://rust-lang.github.io/rust-clippy/master/index.html#manual_is_infinite
+[`manual_is_multiple_of`]: https://rust-lang.github.io/rust-clippy/master/index.html#manual_is_multiple_of
 [`manual_is_power_of_two`]: https://rust-lang.github.io/rust-clippy/master/index.html#manual_is_power_of_two
 [`manual_is_variant_and`]: https://rust-lang.github.io/rust-clippy/master/index.html#manual_is_variant_and
 [`manual_let_else`]: https://rust-lang.github.io/rust-clippy/master/index.html#manual_let_else
